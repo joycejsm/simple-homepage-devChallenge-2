@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+:root{
+    --primary-color: #F2F9FF;
+    --dark-blue:#223343;
+    --light-blue:#2B4ED0;
+    --light--grey:#677389;
+}
+
+body{
+    font-family: 'Sora';
+    background-color: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* media query para desktop */
+@media (min-width: 1025px)  {
+    /* HEADER */
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+   .logo img{
+    margin-top: 2rem;
+    margin-left: 5rem;
+   }
+
+   ul{
+    margin-left: 16rem;
+    display: flex;
+    gap: 3rem;
+    margin-top: 2.3rem;
+    font-size: 18px;
+   }
+   ul li {
+    font-weight: 600;
+    
+   }
+   li a {
+    color: var(--dark-blue);
+   }
+
+   #switch{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    width: 44px;
+    height: 20px;
+    margin-top: 2.7rem;
+    margin-left: 25rem;
+    border-radius: 15px;
+    background-color: var(--dark-blue);
+    position: relative;
+    z-index: 10;
+   }
+   /* #switch button{
+    width: 1.25rem;
+    height: 100%;
+    border-radius: 50%;
+   } */
+
+   #switch img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 92%;
+   }
+
+   /* #switch svg{
+    fill: white;
+   } */
+}
+
+/* media query para tablet */
+/* @media (min-width: 641px) and (max-width: 1024px){
+
+} */
+
+/* media query para mobile */
+/* @media (min-width: 300px) and (max-width:640px){
+
+} */
